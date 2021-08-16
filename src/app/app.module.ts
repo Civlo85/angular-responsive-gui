@@ -10,6 +10,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { GuiButtonComponent } from './gui-button/gui-button.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -19,9 +22,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    AppRoutingModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, GuiButtonComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
